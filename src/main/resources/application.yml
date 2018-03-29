@@ -1,0 +1,22 @@
+server: 
+  port: 9812
+
+spring: 
+  mail: 
+    host: mail.essencefund.com
+    username: xy-info@essencefund.com
+    password: password
+    properties: 
+      mail: 
+        smtp: 
+          auth: true
+
+#logback profile
+logging:
+    config: classpath:logback-spring.xml
+    
+#todo: make sure to always enable security in production
+security:
+  basic:
+    enabled: false
+
